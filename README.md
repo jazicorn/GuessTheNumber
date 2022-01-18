@@ -1,4 +1,4 @@
-# guessTheNumber
+# GuessTheNumber
 
 ##### First
 mvn package
