@@ -47,7 +47,7 @@ public class Main {
 
         // generate random number
         random = (int)(Math.random() * 21);
-        randomReturn = String.format("Your guess is: %1$s", random);
+        randomReturn = String.format("Random number generated: %1$s", random);
         System.out.println(randomReturn);
 
         // ask for a guess
