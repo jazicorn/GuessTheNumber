@@ -20,33 +20,46 @@ public class Main {
         // either way reset counter and generate new random number;
 
         int random;
-        String returnRandom;
+        String randomReturn;
+        String randomRange;
         // boolean playAgain;
         // int counter;
         String name;
-        String returnName;
-        // String welcome;
-        String range;
-        String guess;
+        String nameReturn;
+        String nameAsk;
+        // guess
+        int guess;
+        String guessReturn;
+        String guessPrompt;
+        String guessLow = "Your guess is too low";
+        String guessHigh = "Your guess is too high";
 
         // function user input
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Hello what is your name?");
+        // ask for name
+        nameAsk = "Hello what is your name?";
+        System.out.println(nameAsk);
         name = scan.nextLine();
-        returnName = String.format("\nYour name is: %1$s", name);
-        System.out.println(returnName);
+        // return name
+        nameReturn = String.format("\nYour name is: %1$s", name);
+        System.out.println(nameReturn);
 
-        // random number
+        // generate random number
         random = (int)(Math.random() * 21);
-        returnRandom = String.format("Your guess is: %1$s", random);
-        System.out.println(returnRandom);
+        randomReturn = String.format("Your guess is: %1$s", random);
+        System.out.println(randomReturn);
 
         // ask for a guess
-        range = String.format("\nWell, %1$s, I am thinking of a number 1 and 20", name);
-        guess = "Take a guess";
-        System.out.println(range);
-        System.out.println(guess);
+        randomRange = String.format("\nWell, %1$s, I am thinking of a number 1 and 20", name);
+        guessPrompt = "Take a guess";
+        System.out.println(randomRange);
+        System.out.println(guessPrompt);
+
+        // take guess
+        guess = scan.nextInt();
+        guessReturn = String.format("You guessed: %1$s", guess);
+        System.out.println(guessReturn);
 
         // Your guess is too low.
         // Take a guess
@@ -58,7 +71,6 @@ public class Main {
 
         // Good job, {Jasmine}! You guessed my number in {counter} guesses!
         // would you like to play again? (y or n)
-
 
     }
 
