@@ -1,7 +1,7 @@
 # guessTheNumber
 
 ##### First
-run mvn package
+mvn package
 
 ##### Then
-java -cp target/com.project-1.0-SNAPSHOT.jar com.project.Main
+java -cp target/guessTheNumber-1.0-SNAPSHOT.jar com.project.Main 
