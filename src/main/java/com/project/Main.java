@@ -19,21 +19,34 @@ public class Main {
         // if user doesn't guess within 6 tries user looses ask to play again
         // either way reset counter and generate new random number;
 
-        // int random;
+        int random;
+        String returnRandom;
         // boolean playAgain;
         // int counter;
-        // String name;
+        String name;
+        String returnName;
         // String welcome;
+        String range;
+        String guess;
 
         // function user input
+        Scanner scan = new Scanner(System.in);
 
-        // "Hello what is your name?
-        // input {Jasmine}
+        System.out.println("Hello what is your name?");
+        name = scan.nextLine();
+        returnName = String.format("\nYour name is: %1$s", name);
+        System.out.println(returnName);
 
-        // function random number
+        // random number
+        random = (int)(Math.random() * 21);
+        returnRandom = String.format("Your guess is: %1$s", random);
+        System.out.println(returnRandom);
 
-        // "Well, {Jasmine}, I am thinking of a number 1 and 20".
-        // Take a guess;
+        // ask for a guess
+        range = String.format("\nWell, %1$s, I am thinking of a number 1 and 20", name);
+        guess = "Take a guess";
+        System.out.println(range);
+        System.out.println(guess);
 
         // Your guess is too low.
         // Take a guess
@@ -52,7 +65,6 @@ public class Main {
     public static void main(String[] args) {
 
         run();
-        System.out.println("Hello");
 
     }
 }
